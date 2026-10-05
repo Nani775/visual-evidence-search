@@ -1,36 +1,47 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Visual Evidence Search
 
-## Getting Started
+AI-powered visual evidence investigation system that helps investigators find relevant visual targets across CCTV and video evidence.
 
-First, run the development server:
+## Live Demo
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+https://visual-evidence-search.vercel.app
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Problem
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Searching through large amounts of CCTV footage manually is time-consuming. Investigators may need to review hours of video to find a specific person, vehicle, object, or visual target.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Solution
 
-## Learn More
+Visual Evidence Search allows users to upload multiple reference images and video evidence. The system analyzes the videos and presents relevant occurrences with timestamps through an Evidence Board.
 
-To learn more about Next.js, take a look at the following resources:
+## Key Features
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Multiple reference image upload
+- Video evidence upload
+- AI-powered video analysis
+- Visual evidence matching
+- Exact timestamps for occurrences
+- Jump directly to a detected moment
+- Evidence Board for organizing findings
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Cloudinary
 
-## Deploy on Vercel
+Cloudinary is an active part of the media analysis pipeline. Reference images and CCTV/video evidence are uploaded to Cloudinary, and stored video assets are analyzed using Cloudinary AI Video Analysis to generate timestamped visual information.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+The application processes these results to identify relevant occurrences and allows investigators to jump directly to corresponding moments in the video.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Technology Stack
+
+- Next.js
+- React
+- TypeScript
+- Cloudinary
+- Cloudinary AI Video Analysis
+
+## Important Note
+
+The system assists investigators in locating relevant visual evidence. It does not independently establish identity, guilt, or any legal conclusion.
+
+## Team
+
+JRS AI
